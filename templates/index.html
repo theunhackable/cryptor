@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>
+            Cryptor
+        </title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='android-chrome-512x512.png') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+
+    </head>
+    
+    <body>
+        
+        <div class="container">
+            
+            <div class="heading">
+
+                CRYPTOR
+
+            </div>
+            <pre>
+            <div class="preview" id="preview"> file contents here...
+             </div>
+            </pre>
+            
+            <div>
+                <div class="message">
+
+                </div>
+                <form method="post" action=""  enctype = "multipart/form-data">
+                    
+                    <input type="file" name="file_name" id="file" class="inputfile" oninput="return fileValidation()"/>
+                    <label for="file">Select a file</label>
+
+                    <div class="buttons">
+                        
+                        <button id="encrypt" name="crypt" class="encrypt" type="submit" value="encrypt" disabled>
+                            Encrypt
+                        </button>
+                        
+                        <button name="crypt" id="decrypt" class="decrypt" type="submit" value="decrypt" disabled>
+                            Decrypt
+                        </button>
+                    
+                    </div>
+                    
+                </form>
+                
+            </div>
+            
+                
+        </div>
+        
+    <script src="{{url_for('static', filename='js/index.js')}}"></script>
+    </body>
+</html>
