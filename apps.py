@@ -28,11 +28,11 @@ def index():
                 
         if request.form['crypt'] == "encrypt": 
             with open("downloads/" + session['file_name'], "w") as f:
-                f.writelines(decrypted_text(file_contents))
+                f.writelines(encrypted_text(file_contents))
                 
         if request.form['crypt'] == "decrypt":
             with open("downloads/" + session['file_name'], "w") as f:
-                    f.writelines(encrypted_text(file_contents))               
+                    f.writelines(decrypted_text(file_contents))               
                 
         return redirect(url_for('download_file'))
     return render_template('index.html')
