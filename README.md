@@ -2,7 +2,7 @@
 
 **Cryptor** is a website that demonstrate simple **encryption** and **decryption** of files. The websites takes a **text file** as input, either  encrypt or decrypt the input file and produce the result as a text file which can be downloaded by the user.
 
-Deployed code is [here](https://cryptor-app.herokuapp.com/) so that anyone can use it.
+Deployed code is [here](http://cryptor.pythonanywhere.com/) so that anyone can use it.
 
 ## Web technologies used
 
